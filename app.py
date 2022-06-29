@@ -39,7 +39,6 @@ app.config[
 def webhook():
     req = request.get_json(silent=True, force=True)
     intent_name = req.get('queryResult')['intent']['displayName']
-    print(flask.request.remote_addr)
     if req.get('queryResult')['queryText'] == 'bla':
         return {
             "followupEventInput": {
@@ -60,26 +59,25 @@ def webhook():
                     "source": 'webhook'
                 }
         case 'restrição_alimentar':
+            sql = f"INSERT INTO data (id) VALUES {flask.request.remote_addr}"
+            db_insert(sql)
             global fd_restrict
             if req.get('queryResult')['queryText'] == "Não tenho":
                 fd_restrict = ""
             else:
                 fd_restrict = req.get('queryResult')['queryText']
-                print(req.get('queryResult'))
         case 'tempo':
             global time
             if req.get('queryResult')['queryText'] == "Não precisa":
                 time = ""
             else:
                 time = req.get('queryResult')['queryText']
-                req.get('queryResult')
         case 'gosto':
             global taste
             if req.get('queryResult')['queryText'] == "Sem preferência":
                 taste = ""
             else:
                 taste = req.get('queryResult')['queryText']
-                req.get('queryResult')
         case 'celebridades':
             global portions
             if req.get('queryResult')['queryText'] == "Não precisa":
