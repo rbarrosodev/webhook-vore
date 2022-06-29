@@ -1,3 +1,4 @@
+import flask
 from flask import Flask, request
 import sys
 import logging
@@ -38,6 +39,7 @@ app.config[
 def webhook():
     req = request.get_json(silent=True, force=True)
     intent_name = req.get('queryResult')['intent']['displayName']
+    print(flask.request.remote_addr)
     if req.get('queryResult')['queryText'] == 'bla':
         return {
             "followupEventInput": {
