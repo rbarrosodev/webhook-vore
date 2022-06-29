@@ -68,7 +68,7 @@ def webhook():
                 fd_restrict = ""
             else:
                 fd_restrict = req.get('queryResult')['queryText']
-                print('ip fdr: ', sliced_id)
+                print('ip fdr: ', request.headers.getlist("X-Forwarded-For")[0])
                 sql = f"UPDATE data SET fd_restrict = '{fd_restrict.lower()}' WHERE id = {sliced_id}"
                 db_insert(sql)
         case 'tempo':
@@ -79,7 +79,7 @@ def webhook():
                 time = ""
             else:
                 time = req.get('queryResult')['queryText']
-                print('ip times: ', sliced_id)
+                print('ip times: ', request.headers.getlist("X-Forwarded-For")[0])
                 sql = f"UPDATE data SET times = '{time.lower()}' WHERE id = {sliced_id}"
                 db_insert(sql)
         case 'gosto':
@@ -90,7 +90,7 @@ def webhook():
                 taste = ""
             else:
                 taste = req.get('queryResult')['queryText']
-                print('ip taste: ', sliced_id)
+                print('ip taste: ', request.headers.getlist("X-Forwarded-For")[0])
                 sql = f"UPDATE data SET taste = '{taste.lower()}' WHERE id = {sliced_id}"
                 db_insert(sql)
         case 'celebridades':
