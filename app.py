@@ -68,12 +68,18 @@ def webhook():
                 fd_restrict = ""
             else:
                 fd_restrict = req.get('queryResult')['queryText']
+                sql = f"UPDATE data SET fd_restrict = '{fd_restrict}' WHERE id = {sliced_id}"
+                db_insert(sql)
         case 'tempo':
+            id = flask.request.remote_addr.replace('.', '')
+            sliced_id = int(id[slice(7)])
             global time
             if req.get('queryResult')['queryText'] == "Não precisa":
                 time = ""
             else:
                 time = req.get('queryResult')['queryText']
+                sql = f"UPDATE data SET fd_restrict = '{time}' WHERE id = {sliced_id}"
+                db_insert(sql)
         case 'gosto':
             global taste
             if req.get('queryResult')['queryText'] == "Sem preferência":
