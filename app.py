@@ -59,7 +59,9 @@ def webhook():
                     "source": 'webhook'
                 }
         case 'restrição_alimentar':
-            sql = f"INSERT INTO data (id) VALUES ({int(flask.request.remote_addr.replace('.', ''))})"
+            id = flask.request.remote_addr.replace('.', '')
+            sliced_id = int(id[slice(7)])
+            sql = f"INSERT INTO data (id) VALUES ({sliced_id})"
             db_insert(sql)
             global fd_restrict
             if req.get('queryResult')['queryText'] == "Não tenho":
