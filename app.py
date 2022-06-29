@@ -3,6 +3,8 @@ import json
 
 app = Flask(__name__)
 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ijmxmeayhtflcc:33d7017fb56b23507daf2fdb24812ec33582e17b54977b787b467768f2d67c33@ec2-23-23-182-238.compute-1.amazonaws.com:5432/dcc9e4h4tek2jj'
+
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
