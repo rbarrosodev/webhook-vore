@@ -1,48 +1,17 @@
-import flask
 from flask import Flask, request
-import sys
-import logging
-import psycopg2
 import json
 
-
-def db_connect():
-    con = psycopg2.connect(host='ec2-23-23-182-238.compute-1.amazonaws.com',
-                           database='dcc9e4h4tek2jj',
-                           user='ijmxmeayhtflcc',
-                           password='33d7017fb56b23507daf2fdb24812ec33582e17b54977b787b467768f2d67c33',
-                           port='5432')
-    return con
-
-
-def db_insert(sql):
-    con = db_connect()
-    cur = con.cursor()
-    try:
-        cur.execute(sql)
-        con.commit()
-    except (Exception, psycopg2.DatabaseError) as error:
-        print("Error: %s" % error)
-        con.rollback()
-        cur.close()
-        return 1
-    cur.close()
-
-
 app = Flask(__name__)
-
-app.config[
-    'SQLALCHEMY_DATABASE_URI'] = 'postgres://ijmxmeayhtflcc:33d7017fb56b23507daf2fdb24812ec33582e17b54977b787b467768f2d67c33@ec2-23-23-182-238.compute-1.amazonaws.com:5432/dcc9e4h4tek2jj'
 
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
     req = request.get_json(silent=True, force=True)
     intent_name = req.get('queryResult')['intent']['displayName']
-    if req.get('queryResult')['queryText'] == 'bla':
+    if req.get('queryResult')['queryText'] == 'Recomeçar' or req.get('queryResult')['queryText'] == 'Voltar ao inicio':
         return {
             "followupEventInput": {
-                "name": "bla",
+                "name": "inicio",
                 "languageCode": "en-US"
             }
         }
@@ -59,76 +28,41 @@ def webhook():
                     "source": 'webhook'
                 }
         case 'restrição_alimentar':
-            id = flask.request.remote_addr.replace('.', '')
-            sliced_id = int(id[slice(7)])
-            sql = f"INSERT INTO data (id) VALUES ({sliced_id})"
-            db_insert(sql)
             global fd_restrict
             if req.get('queryResult')['queryText'] == "Não tenho":
                 fd_restrict = ""
             else:
                 fd_restrict = req.get('queryResult')['queryText']
-                print('ip fdr: ', request.headers.getlist("X-Forwarded-For")[0])
-                sql = f"UPDATE data SET fd_restrict = '{fd_restrict.lower()}' WHERE id = {sliced_id}"
-                db_insert(sql)
         case 'tempo':
-            id = flask.request.remote_addr.replace('.', '')
-            sliced_id = int(id[slice(7)])
             global time
             if req.get('queryResult')['queryText'] == "Não precisa":
                 time = ""
             else:
                 time = req.get('queryResult')['queryText']
-                print('ip times: ', request.headers.getlist("X-Forwarded-For")[0])
-                sql = f"UPDATE data SET times = '{time.lower()}' WHERE id = {sliced_id}"
-                db_insert(sql)
         case 'gosto':
-            id = flask.request.remote_addr.replace('.', '')
-            sliced_id = int(id[slice(7)])
             global taste
             if req.get('queryResult')['queryText'] == "Sem preferência":
                 taste = ""
             else:
                 taste = req.get('queryResult')['queryText']
-                print('ip taste: ', request.headers.getlist("X-Forwarded-For")[0])
-                sql = f"UPDATE data SET taste = '{taste.lower()}' WHERE id = {sliced_id}"
-                db_insert(sql)
         case 'celebridades':
-            id = flask.request.remote_addr.replace('.', '')
-            sliced_id = int(id[slice(7)])
-            global portions
-            if req.get('queryResult')['queryText'] == "Não precisa":
-                portions = ""
-            else:
-                portions = req.get('queryResult')['queryText']
-                sql = f"UPDATE data SET portions = '{portions.lower()}' WHERE id = {sliced_id}"
-                db_insert(sql)
-        case 'nomedascelebridades':
-            id = flask.request.remote_addr.replace('.', '')
-            sliced_id = int(id[slice(7)])
-            global celebrity_name
+            global celebrities
             if req.get('queryResult')['queryText'] == "Sem preferência":
-                celebrity_name = ""
+                celebrities = ""
             else:
-                celebrity_name = req.get('queryResult')['queryText']
-                sql = f"UPDATE data SET portions = '{celebrity_name}' WHERE id = {sliced_id}"
-                db_insert(sql)
+                celebrities = req.get('queryResult')['queryText']
         case 'ingredientes':
-            id = flask.request.remote_addr.replace('.', '')
-            sliced_id = int(id[slice(7)])
             global ingredients
             if req.get('queryResult')['queryText'] == "Não precisa":
                 ingredients = ""
             else:
                 ingredients = req.get('queryResult')['queryText']
-                sql = f"UPDATE data SET ingredients = '{ingredients.lower()}' WHERE id = {sliced_id}"
-                db_insert(sql)
 
             return {
-                "fulfillmentText": f"""{'Então você é ' + fd_restrict.lower() if fd_restrict else 'Então você não tem restrições alimentares'}, {' tem até ' + time.lower() + ' para preparar receitas' if time else ' não tem preferência de tempo para receitas'}, {' quer preparar algo ' + taste.lower() if taste else ' não tem preferência por gosto específico'}, {'quer que renda ' + portions.lower() if portions else ' não tem preferência por tamanho de porção'}, {'quer auxílio de ' + celebrity_name if celebrity_name else ' não tem preferência por canal ou celebridade Globo'}, {' e têm ' + ingredients.lower() + ' na cozinha?' if ingredients else ' e não tem ingredientes adicionais?'}""",
+                "fulfillmentText": f"""{'Então você é ' + fd_restrict.lower() if fd_restrict else 'Então você não tem restrições alimentares'}, {' tem até ' + time.lower() + ' para preparar receitas' if time else ' não tem preferência de tempo para receitas'}, {' quer preparar algo ' + taste.lower() if taste else ' não tem preferência por gosto específico'}, {'quer auxílio de ' + celebrities if celebrities else ' não tem preferência por canal ou celebridade Globo'}, {' e têm ' + ingredients.lower() + ' na cozinha?' if ingredients else ' e não tem ingredientes adicionais?'}""",
                 "source": 'webhook'
             }
-        case 'restart':
+        case 'reiniciar':
             return {
                 "fulfillmentText": "Recomeçando...",
                 "followupEventInput": {
@@ -137,9 +71,6 @@ def webhook():
                 }
             }
 
-
-app.logger.addHandler(logging.StreamHandler(sys.stdout))
-app.logger.setLevel(logging.ERROR)
 
 if __name__ == '__main__':
     app.run(debug=True)
