@@ -26,6 +26,26 @@ def webhook():
             }
 
         case 'fallback':
+            if 'Ingredientes: ' in req.get('queryResult')['queryText']:
+                if req.get('queryResult')['queryText'] != "Não precisa":
+                    uuid = req.get('originalDetectIntentRequest')['payload']['tiledesk']['payload']['request']['requester']['uuid_user']
+                    df = pd.read_csv("data.csv",
+                                     delimiter=';',
+                                     skipinitialspace=True)
+                    df.at[df[df['uuid'] == uuid].index.values[0], 'ing'] = req.get('queryResult')['queryText'].replace("Ingredientes:, ''")
+                    print(df)
+                    df.to_csv('data.csv', index=False, sep=";")
+
+                    uindex = df[df['uuid'] == uuid].index.values[0]
+
+                    return {
+                        "fulfillmentText": f"""{'Então você é ' + str(df.at[uindex, 'fdr']).lower() if str(df.at[uindex, 'fdr']) != 'nan' else 'Então você não tem restrições alimentares'}, {' tem até ' + str(df.at[uindex, 'time']).lower() + ' para preparar receitas' if str(df.at[uindex, 'time']) != 'nan' else ' não tem preferência de tempo para receitas'}, {' quer preparar algo ' + str(df.at[uindex, 'taste']).lower() if str(df.at[uindex, 'taste']) != 'nan' else ' não tem preferência por gosto específico'}, {'quer auxílio de ' + str(df.at[uindex, 'celeb']) if str(df.at[uindex, 'celeb']) != 'nan' else ' não tem preferência por canal ou celebridade Globo'}, {' e têm ' + str(df.at[uindex, 'ing']).lower() + ' na cozinha?' if str(df.at[uindex, 'ing']) != 'nan' else ' e não tem ingredientes adicionais?'}""",
+                        "source": 'webhook',
+                        "followupEventInput": {
+                            "name": "ingredientes",
+                            "languageCode": "en-US"
+                        }
+                    }
             if '@' in req.get('queryResult')['queryText']:
                 return {
                     "fulfillmentText": 'Obrigado pela sua participação!',
@@ -88,6 +108,7 @@ def webhook():
                 df.to_csv('data.csv', index=False, sep=";")
 
         case 'ingredientes':
+            print("bla")
             if req.get('queryResult')['queryText'] != "Não precisa":
                 uuid = req.get('originalDetectIntentRequest')['payload']['tiledesk']['payload']['request']['requester']['uuid_user']
                 df = pd.read_csv("data.csv",
