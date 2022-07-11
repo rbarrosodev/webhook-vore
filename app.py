@@ -26,7 +26,7 @@ def webhook():
             }
 
         case 'fallback':
-            if 'Ingredientes: ' in req.get('queryResult')['queryText']:
+            if ',' in req.get('queryResult')['queryText']:
                 if req.get('queryResult')['queryText'] != "Não precisa":
                     uuid = req.get('originalDetectIntentRequest')['payload']['tiledesk']['payload']['request']['requester']['uuid_user']
                     df = pd.read_csv("data.csv",
