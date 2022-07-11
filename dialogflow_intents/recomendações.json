@@ -1,0 +1,126 @@
+{
+  "id": "d643ca7e-2b60-4aad-a007-01a794d4cfdf",
+  "name": "recomendações",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "pular2-followup"
+  ],
+  "contexts": [
+    "pular2-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "3964af6c-78d8-4938-82ac-b266ed82f9fa",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-yes.DefaultWelcomeIntent-yes-yes.DefaultWelcomeIntent-yes-yes-yes.DefaultWelcomeIntent-yes-yes-yes-yes.1hora-yes.doce-yes.pular-yes.pular2-yes",
+      "affectedContexts": [
+        {
+          "name": "ovosleiteeacar-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "recomendaes-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Então da uma olhada no que eu selecionei pra vc!! Se não gostar da recomendação, podemos tentar de novo!\n\n* Pudim de leite condensado https://www.shorturl.at/hmGIY\nPudim de leite condensado\nComo fazer um pudim lisinho? Ana Maria Braga ensina receita fácil com apenas 4 ingredientes, e conta o segredo para o pudim ficar sem furinhos\nPrecisa também de leite condensado!\n\n* Bolo de creme de leite https://www.shorturl.at/dhmyI\nBolo de creme de leite\nBatido na batedeira, veja todos os segredos do bolo de creme de leite superfofinho!\nPrecisa também de farinha de trigo com fermento, margarina, creme de leite e raspas de limão!\n\n* Panqueca americana https://www.shorturl.at/ehABR\nPanqueca americana\nSaiba como fazer panqueca americana para o café da manhã; simples e fácil, receita pode ser servida com creme de avelã\nPrecisa também de a manteiga sem sal, farinha de trigo e fermento químico!\n\nSe faltar algum desses ingredientes você pode pedir no conforto de casa com o Ifood!\n\nGostou??!! Quer tentar outras receitas?\n\ntdFrame:https://vore-urkak.run-us-west2.goorm.io/ideiaglobo/bla/\n\n* Tenho uma dúvida"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Isso!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2c269890-4617-44f4-8a17-4bd7dc56edee",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tá tudo ok",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7ea6e01d-f984-4574-8b9e-faa078510727",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tudo ok",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5bdf4e8d-da5d-464d-8761-219a37572e51",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ok",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "447770c6-383c-4e8f-9109-b83ede8fc52b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sim",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "33e7edd5-d529-4e12-bb88-74a461b76802",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Isso",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7f3aeb03-fe9f-4dad-ae18-a9b37c115573",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": true,
+  "webhookUsed": true
+}

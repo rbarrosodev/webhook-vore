@@ -1,0 +1,105 @@
+{
+  "id": "0a645c9e-0f38-447a-92a2-eff2accffbc9",
+  "name": "sim_banhomaria2",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "banhomaria2-followup"
+  ],
+  "contexts": [
+    "banhomaria2-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "b3b0c404-af72-4d46-9c46-e2e8b70319a5",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "receita_duvida.receita_duvida-yes-2.banhomaria2-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Que bom!! Fico muito feliz que consegui te ajudar 😊, se tiver mais dúvidas ou quiser alguma recomendação, é só me chamar 😉\n* Voltar ao inicio"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "ed6b8c50-af82-49a3-9017-2a61dfa7325e",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sim",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d1b279f9-551c-4554-b9ca-52dfb0e8e6bf",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Resolveu meu problema",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2226a75e-4bd9-4c0d-ba49-e691a72e6987",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Funcionou pra mim",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a8912300-a677-4a71-830d-233b9f41db29",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Aprendi",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "973cf029-e56b-4be5-8b92-9ee90f238444",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Conseguiu",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3d9d9407-0778-433a-9eeb-dd2fcab634e7",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

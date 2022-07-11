@@ -1,0 +1,114 @@
+{
+  "id": "cf4e8ddc-9049-45cc-95b2-0f4d424c56f4",
+  "name": "inicio_filtros",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "DefaultWelcomeIntent-yes-followup"
+  ],
+  "contexts": [
+    "DefaultWelcomeIntent-yes-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "df532004-576e-416a-9f74-e904ba47f8d9",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-yes.DefaultWelcomeIntent-yes-yes",
+      "affectedContexts": [
+        {
+          "name": "DefaultWelcomeIntent-yes-yes-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "afirmativo-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Tem alguma restrição alimentar? Se tiver mais de 1 restrição, escreva tudo em apenas 1 mensagem! E se errar, não tem problema, vai dar para editar suas preferências novamente no final 😘\n* Não tenho\n* Vegano\n* Vegetariano\n* Celíaco\n* Diabético"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quero colocar filtros",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bc0c7c27-10d1-44b7-ace5-7fab809a230f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ok",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4f0e32ce-0a6a-4a3e-9543-99846fa58709",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "sim",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "89d1dd6a-9614-44b7-8a2c-c5cd5767249c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "quero",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cedf125f-ff0f-4722-99ee-b1b9f4cebc11",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quero sim!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2cfd60a5-098d-4096-9c4d-19d3b60813a1",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

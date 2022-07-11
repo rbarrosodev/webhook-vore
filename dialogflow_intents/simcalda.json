@@ -1,0 +1,83 @@
+{
+  "id": "8bd66e3c-d582-4ddb-8aaa-546673bca026",
+  "name": "simcalda",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "dvidas-followup",
+    "banhomaria-followup"
+  ],
+  "contexts": [
+    "dvidas-followup",
+    "banhomaria-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "fd21a70c-ab0b-4b7a-9165-93f024e59412",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "inicio.inicio-yes.dvida-yes.banhomaria-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Que bom!! Fico muito feliz que consegui te ajudar 😊, se tiver mais dúvidas ou quiser alguma recomendação, é só me chamar 😉\n* Voltar ao inicio"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Consegui",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d38a340c-284b-4701-9721-32fd2d4b278e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Isso",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2d1d4c58-2a5f-4102-b235-f1d9b31c4f92",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sim",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "73a64041-5175-490f-88ce-9ddfaf0cd51c",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

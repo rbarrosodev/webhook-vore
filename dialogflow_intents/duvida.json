@@ -1,0 +1,120 @@
+{
+  "id": "ac949cbc-c6ae-4a4a-be8c-44984285a088",
+  "name": "duvida",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "DefaultWelcomeIntent-followup",
+    "inicio-followup"
+  ],
+  "contexts": [
+    "DefaultWelcomeIntent-followup",
+    "inicio-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "inicio.inicio-yes",
+      "affectedContexts": [
+        {
+          "name": "dvida-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "url",
+          "dataType": "@sys.url",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$url",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Ih! Me fale o que te aflige! Consigo te ajudar com procedimentos na cozinha 👍👍\n* Ponto de calda\n* Banho-maria"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "fiquei com",
+          "userDefined": false,
+          "alias": "url",
+          "meta": "@sys.url"
+        },
+        {
+          "text": " dúvida",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "31a64f4a-77ea-459a-827e-0518213cc0ef",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "fiquei com dúvida!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f032ac2b-bc1f-4735-b8ca-70c0b3455aea",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tenho uma dúvida",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a8c40b07-ff10-4384-a5f8-ce0ab6e7ad27",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "dúvida",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0a081a26-8c45-4e55-8e85-31eb28bf04ed",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

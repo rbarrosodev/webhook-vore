@@ -1,0 +1,202 @@
+{
+  "id": "3964af6c-78d8-4938-82ac-b266ed82f9fa",
+  "name": "ingredientes",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "pular-followup"
+  ],
+  "contexts": [
+    "pular-followup"
+  ],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "ingredientes"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "4188a468-d817-4414-8945-1ee28d065d3b",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-yes.DefaultWelcomeIntent-yes-yes.DefaultWelcomeIntent-yes-yes-yes.DefaultWelcomeIntent-yes-yes-yes-yes.1hora-yes.doce-yes.pular-yes",
+      "affectedContexts": [
+        {
+          "name": "pular2-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "color",
+          "dataType": "@sys.color",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$color",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "teste"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "não",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c6438dff-d2e8-48a2-92c5-2027a725acf5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "não quero",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e5fc68ae-57b9-49d1-93df-9533889e1391",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Pular",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "18d2dfe1-9e37-4e22-9501-f6ee749b0a47",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "não precisa",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "db6c374a-9172-45eb-a1df-c695b9d73dab",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "chocolate",
+          "userDefined": false,
+          "alias": "color",
+          "meta": "@sys.color"
+        }
+      ],
+      "count": 0,
+      "id": "99e73e2b-c717-4de3-846e-0d5706362f45",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "arroz",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8ff99afc-8dfb-4669-8011-fe8d2047514b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "açúcar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3ab6472f-a9c6-4cd1-ab1c-24e759fa03a8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "leite",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "22e14143-aa43-4475-bdaf-cb88ddcb91af",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ovos",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "98bddaf5-2261-4e07-b812-68e7b442f2eb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ovos, leite e açúcar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "76f3955b-3d35-453a-ad35-ddf7d44b0bb1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sem preferência",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "53f64704-af2e-47f9-ad65-4409e0d5306d",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": true,
+  "webhookUsed": true
+}

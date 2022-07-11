@@ -1,0 +1,216 @@
+{
+  "id": "f28aa795-5eb5-4488-988f-a9fd70ef025a",
+  "name": "tempo",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "DefaultWelcomeIntent-yes-yes-yes-followup"
+  ],
+  "contexts": [
+    "DefaultWelcomeIntent-yes-yes-yes-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "c3662a0b-ce04-46cd-bda5-7b625e8d7633",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-yes.DefaultWelcomeIntent-yes-yes.DefaultWelcomeIntent-yes-yes-yes.DefaultWelcomeIntent-yes-yes-yes-yes",
+      "affectedContexts": [
+        {
+          "name": "1hora-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "duration",
+          "dataType": "@sys.duration",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$duration",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Quer cozinhar algo doce ou salgado?\n* Sem preferência\n* Doce\n* Salgado"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "pular",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ff2d4879-7453-47b5-b203-dc0ddeedb1a7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Não precisa",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7a70cdc7-12f4-4886-966e-455cc702eb5e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "45 min",
+          "userDefined": false,
+          "alias": "duration",
+          "meta": "@sys.duration"
+        }
+      ],
+      "count": 0,
+      "id": "82b3e160-cbe8-4766-ba58-75bcc37eb49d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "45 minutos",
+          "userDefined": false,
+          "alias": "duration",
+          "meta": "@sys.duration"
+        }
+      ],
+      "count": 0,
+      "id": "676beab8-169a-4734-8ee9-8a3275b43796",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "30 min",
+          "userDefined": false,
+          "alias": "duration",
+          "meta": "@sys.duration"
+        }
+      ],
+      "count": 0,
+      "id": "c1171d88-aaec-4eae-94c8-1e3b09a55510",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "30 minutos",
+          "userDefined": false,
+          "alias": "duration",
+          "meta": "@sys.duration"
+        }
+      ],
+      "count": 0,
+      "id": "f7064aae-8b23-404f-91bb-f4d644554d63",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "15 minutos",
+          "userDefined": false,
+          "alias": "duration",
+          "meta": "@sys.duration"
+        }
+      ],
+      "count": 0,
+      "id": "a8f3ad90-43c8-4770-8a83-216cc8d37945",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "15 min",
+          "userDefined": false,
+          "alias": "duration",
+          "meta": "@sys.duration"
+        }
+      ],
+      "count": 0,
+      "id": "3cdf263d-a0d4-47f0-9b6b-8be6b4f4e713",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "1h",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "188794a2-ed93-45f6-94ea-a9843f1f4a80",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "uma hora",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "74dae29a-6535-4d64-861e-16b9b7c84dfc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "1",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " hora",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e855d003-6fa7-404c-b28b-6f2f3cca8125",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": true,
+  "webhookUsed": true
+}

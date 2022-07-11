@@ -1,0 +1,62 @@
+{
+  "id": "ed6b8c50-af82-49a3-9017-2a61dfa7325e",
+  "name": "receita_duvida",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "receita_duvida_teste"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "receita_duvida-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Ih! Me fale o que te aflige! Consigo te ajudar com procedimentos na cozinha 👍👍\n* Ponto de calda\n* Banho-maria"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Tenho uma dúvida",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8c4cda4e-36fd-46f9-bd94-d8507f2a5293",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

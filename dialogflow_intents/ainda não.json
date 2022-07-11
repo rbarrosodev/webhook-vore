@@ -1,0 +1,86 @@
+{
+  "id": "21298cae-463c-4c21-9cb2-7cfdce597675",
+  "name": "ainda não",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "pontodecalda-followup"
+  ],
+  "contexts": [
+    "pontodecalda-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "e6e55a2e-f976-4221-b247-f2030dbacf3b",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "inicio.inicio-yes.dvida-yes.pontodecalda-no",
+      "affectedContexts": [
+        {
+          "name": "aindano-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Poxa que pena :(  Anotamos aqui que você não entendeu e vamos tentar melhorar isso para a próxima vez!\n\nQuer ajuda com mais alguma coisa?\n* Voltar ao inicio"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Infelizmente não",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "88a3b080-a5fe-42d0-a719-ba6903d78d9b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Não",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "959f7924-cccb-4d72-9502-0846a96c0a3f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ainda não 😔",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a350426e-56c0-4bfa-b9d6-04fb50375d3b",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

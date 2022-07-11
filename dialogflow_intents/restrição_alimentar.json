@@ -1,0 +1,170 @@
+{
+  "id": "c3662a0b-ce04-46cd-bda5-7b625e8d7633",
+  "name": "restrição_alimentar",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "DefaultWelcomeIntent-yes-yes-followup"
+  ],
+  "contexts": [
+    "DefaultWelcomeIntent-yes-yes-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "cf4e8ddc-9049-45cc-95b2-0f4d424c56f4",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-yes.DefaultWelcomeIntent-yes-yes.DefaultWelcomeIntent-yes-yes-yes",
+      "affectedContexts": [
+        {
+          "name": "DefaultWelcomeIntent-yes-yes-yes-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Tem preferência para até quanto tempo você quer gastar na receita?\n* Não precisa\n* 15 min\n* 30 min\n* 45 min\n* 1 hora"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sou diabético",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d7c8df14-0ba1-48fc-ac9e-1a852e686af5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "diabético",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "44f7ffd9-1a0a-4a34-919f-ed56602c8ef9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "pular",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "69ce96c8-164a-48f1-b056-74286c36e693",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Não tenho",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3f0a718e-5f12-4b7a-a679-5fac28f1b940",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sou celíaco",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "64498a37-2e8f-42f3-ad83-dc8cb8a16876",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "celíaco",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4ad608ca-aa18-4d79-98bb-1154f6735b8a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "sou vegano",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "56805c3b-cdc4-4880-8efd-37bca7206a14",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "vegano",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "323e0b5b-9b84-4ace-826b-bb480cebd565",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sou vegetariano",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c89b1773-bb8b-475a-b95e-af3c52954bf5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Vegetariano",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "66a0dd90-5692-41bb-a12f-e33243ba6513",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": true,
+  "webhookUsed": true
+}

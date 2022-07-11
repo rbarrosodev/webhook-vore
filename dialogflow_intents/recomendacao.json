@@ -1,0 +1,118 @@
+{
+  "id": "df532004-576e-416a-9f74-e904ba47f8d9",
+  "name": "recomendacao",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "DefaultWelcomeIntent-followup"
+  ],
+  "contexts": [
+    "DefaultWelcomeIntent-followup"
+  ],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "recomendacao"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-yes",
+      "affectedContexts": [
+        {
+          "name": "DefaultWelcomeIntent-yes-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "recomendao-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "A recomendação do dia é o macarrão ao limão e queijo parmesão da Rita Lobo que vai ao ar às 19h no GNT e eu to com a receita aqui se você não quiser esperar! Clica lá no botão!\n\nMas se você quiser uma recomendação mais específica, coloque alguns filtros e/ou ingredientes para que eu possa te enviar as melhores opções baseadas no seu gosto! Apenas opções para iniciantes por enquanto 👍👍 Se você estiver logado com sua conta Globo, essas suas preferências ficarão salvas!\n* Quero colocar filtros\n* Receita Rita Lobo https://receitas.globo.com/macarrao-com-limao-e-queijo-parmesao-gnt.ghtml"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Me recomenda algo",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "63de02b1-ace7-47b9-8098-a60b3109f562",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Receber recomendações",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "962711bd-2cea-44b6-89cc-5c5a27e07d8d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Recomendar receita",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "364f95f2-066f-4260-8af4-f781cfb7fbe1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quero receber uma recomendação de receita!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0a7b533d-dbf9-4cac-9917-8ac35f34fe50",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Recomendação",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9caa11cc-81ad-46c0-a523-119cf9c9e06d",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,181 @@
+{
+  "id": "296d2242-907f-4704-89d4-75588124c1db",
+  "name": "inicio",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    },
+    {
+      "name": "inicio"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "input.welcome",
+      "affectedContexts": [
+        {
+          "name": "DefaultWelcomeIntent-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "inicio-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Oiii! Vim te dizer que posso sugerir algumas receitas e te ajudar na cozinha! Qualquer coisa me chama, tá?\n* Receber recomendações\n* Dúvida"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "\\start",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7bc3b3d5-2350-4183-a00c-9eeaca9caa9c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "eaí",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "dca6e8c0-2bdc-4469-8f85-facc63692021",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "e aí",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a534562e-86fc-4776-b983-0d4e63aa9a48",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "e ai",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f4dec130-dcbd-491e-af83-74ad9f5df1e7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "oii",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "850bef8d-8eed-429a-bc43-177bc41e009a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ola",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "861888e4-a09e-444a-a7a2-e2aaebbbd328",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "olá",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "45dd7e4b-b35f-4862-a6d6-25470318753e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "eae",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "df58455a-7a5c-48aa-a8c7-3e40daf24f11",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "eai",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6b96578f-c269-4416-936c-2de90ac5ee7a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "oi",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fbdeb730-0876-494c-b9de-f0c41518a296",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

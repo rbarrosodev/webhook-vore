@@ -1,0 +1,104 @@
+{
+  "id": "fd21a70c-ab0b-4b7a-9165-93f024e59412",
+  "name": "banhomaria",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "dvida-followup"
+  ],
+  "contexts": [
+    "dvida-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "ac949cbc-c6ae-4a4a-be8c-44984285a088",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "inicio.inicio-yes.dvida-yes",
+      "affectedContexts": [
+        {
+          "name": "dvidas-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "banhomaria-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "person",
+          "dataType": "@sys.person",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$person",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "tdVideo:https://www.youtube.com/embed/zKvNkEpYOjE\n\n\nTecnicamente o banho-maria consiste em aquecer ingredientes que não podem ser expostos diretamente no fogo ou que não podem ferver. É muito usado para derreter chocolate, cozinhar pudim, cozer leite condensado, entre outros preparos\n\nTirei sua dúvida?\n\n* Sim \n* Ainda não 😔"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "banho ",
+          "userDefined": false
+        },
+        {
+          "text": "maria",
+          "userDefined": false,
+          "alias": "person",
+          "meta": "@sys.person"
+        }
+      ],
+      "count": 0,
+      "id": "e016211b-3497-4fe5-97f4-a46bc3e47e61",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Banho-",
+          "userDefined": false
+        },
+        {
+          "text": "maria",
+          "userDefined": false,
+          "alias": "person",
+          "meta": "@sys.person"
+        }
+      ],
+      "count": 0,
+      "id": "abf76aa9-0dfb-4371-91cd-181e0d3a1b6d",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

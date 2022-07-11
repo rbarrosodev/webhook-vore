@@ -1,0 +1,88 @@
+{
+  "id": "f1eb0f72-d95a-4c35-9096-10c19244b407",
+  "name": "gosto",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "1hora-followup"
+  ],
+  "contexts": [
+    "1hora-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "f28aa795-5eb5-4488-988f-a9fd70ef025a",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-yes.DefaultWelcomeIntent-yes-yes.DefaultWelcomeIntent-yes-yes-yes.DefaultWelcomeIntent-yes-yes-yes-yes.1hora-yes",
+      "affectedContexts": [
+        {
+          "name": "doce-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Tem preferência para receber receitas de alguma celebridade ou canal Globo específico?\n* Sem preferência\n* Rita Lobo\n* Rodrigo Hilbert"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "sem preferência",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "aa83c61b-e23f-450a-b472-0dc741166dd7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "salgado",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cf350132-1d10-432f-85ec-17e9e9fa707e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Doce",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 5,
+      "id": "3bc0e685-8a16-483b-8b5c-9920608356e9",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": true,
+  "webhookUsed": true
+}

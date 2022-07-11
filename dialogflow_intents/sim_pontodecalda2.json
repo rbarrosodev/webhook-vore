@@ -1,0 +1,105 @@
+{
+  "id": "1f8f6c84-b54a-484c-96d3-8fe211ac289b",
+  "name": "sim_pontodecalda2",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "pontodecalda2-followup"
+  ],
+  "contexts": [
+    "pontodecalda2-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "71dfb990-d350-4387-b2c9-4b4c3c786ab4",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "receita_duvida.receita_duvida-yes.pontodecalda2-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Que bom!! Fico muito feliz que consegui te ajudar 😊, se tiver mais dúvidas ou quiser alguma recomendação, é só me chamar 😉\n* Voltar ao inicio"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "ed6b8c50-af82-49a3-9017-2a61dfa7325e",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sim",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "959168cc-1cb8-4657-905f-ea00d03aa5a0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Conseguiu",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d866d2e8-ddac-4597-8e09-d309d1d9329a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Aprendi",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "97cee46f-b2ad-4611-9ab9-a7c02a3771fb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Funcionou pra mim",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "dd090d3c-fe2f-40d0-b771-191bd2c3ff21",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Resolveu meu problema",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3c36e33d-3583-41d9-ab15-b298ef5c404f",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

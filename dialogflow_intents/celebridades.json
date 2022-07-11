@@ -1,0 +1,104 @@
+{
+  "id": "4188a468-d817-4414-8945-1ee28d065d3b",
+  "name": "celebridades",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "doce-followup"
+  ],
+  "contexts": [
+    "doce-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "f1eb0f72-d95a-4c35-9096-10c19244b407",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-yes.DefaultWelcomeIntent-yes-yes.DefaultWelcomeIntent-yes-yes-yes.DefaultWelcomeIntent-yes-yes-yes-yes.1hora-yes.doce-yes",
+      "affectedContexts": [
+        {
+          "name": "pular-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "person",
+          "dataType": "@sys.person",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$person",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Por último, você quer adicionar alguns ingredientes que já tem em casa que você quer usar na receita? Se quiser, escreva agora 😘 (Escreva da seguinte forma: \"Ingredientes: <seus ingredientes aqui>\")"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Rita Lobo",
+          "userDefined": false,
+          "alias": "person",
+          "meta": "@sys.person"
+        }
+      ],
+      "count": 0,
+      "id": "615d9510-f9b2-4d09-9802-de7bdd2302d9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Rodrigo Hilbert",
+          "userDefined": false,
+          "alias": "person",
+          "meta": "@sys.person"
+        }
+      ],
+      "count": 0,
+      "id": "46a26b63-8df5-42da-9d23-cdc11da1ebbd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sem preferência",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b2cfbc29-b7c6-4660-bf61-49116e1747fd",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": true,
+  "webhookUsed": true
+}

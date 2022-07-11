@@ -1,0 +1,105 @@
+{
+  "id": "f17ab7a8-d0d9-452c-935c-652b3dda1cbb",
+  "name": "Sim",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "pontodecalda-followup"
+  ],
+  "contexts": [
+    "pontodecalda-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "e6e55a2e-f976-4221-b247-f2030dbacf3b",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "inicio.inicio-yes.dvida-yes.pontodecalda-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Que bom!! Fico muito feliz que consegui te ajudar 😊, se tiver mais dúvidas ou quiser alguma recomendação, é só me chamar 😉\n* Voltar ao inicio"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Resolveu meu problema",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2f78dd27-9316-4122-aff3-86f7ec7f31b1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Funcionou pra mim",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b690568f-6451-4c8a-8913-1bab018f404b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Aprendi",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cbab1de9-be53-4210-90bc-9c4eff1883a8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Conseguiu",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8f6206a1-5f7a-4398-99e2-d3d153ff92cd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sim",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d47b21fe-08b5-41c2-8e1f-7c8e28326a33",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

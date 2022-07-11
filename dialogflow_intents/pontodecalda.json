@@ -1,0 +1,62 @@
+{
+  "id": "e6e55a2e-f976-4221-b247-f2030dbacf3b",
+  "name": "pontodecalda",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "dvida-followup"
+  ],
+  "contexts": [
+    "dvida-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "ac949cbc-c6ae-4a4a-be8c-44984285a088",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "inicio.inicio-yes.dvida-yes",
+      "affectedContexts": [
+        {
+          "name": "pontodecalda-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "tdVideo:https://www.youtube.com/embed/xWDUm2-9ArI\n\n\nPerfeito, aqui vão alguns exemplos de tipos de pontos da calda de açúcar:\n\nFio Fino: É quando a calda atinge a temperatura de 101°C. Ao puxá-la com o garfo ou a colher, se forma um fiozinho que se desmancha facilmente num copo com água. O Fio Fino é usado para fazer marshmallows e xaropes.\n\nPérola: Esse ponto é muito usado para preparar quindins e compotas. Você pode identificá-lo mais ou menos depois de cinco minutos no fogo, ao puxar a colher e a calda cair num fio e depois em uma gotinha semelhante a uma pérola.\n\nFio Forte: Ao pingar um pouco da calda num copo com água fria, você vai ver que os desenhos formados por ela demoram a se desmanchar e o fio é mais grosso. Para atingir esse ponto, é preciso deixar a calda um pouco mais no fogo, a 103°C. É usado para geleias e recheios.\n\nTirei sua dúvida?\n\n* Sim \n* Ainda não 😔"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ponto de calda",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "161502ec-d3e2-4a43-8d53-44e1fd90be5a",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

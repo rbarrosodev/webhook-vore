@@ -1,0 +1,136 @@
+{
+  "id": "19ab9a95-2c57-448a-9e96-8b357854f16b",
+  "name": "ainda nao",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "dvidas-followup",
+    "banhomaria-followup"
+  ],
+  "contexts": [
+    "dvidas-followup",
+    "banhomaria-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "fd21a70c-ab0b-4b7a-9165-93f024e59412",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "inicio.inicio-yes.dvida-yes.banhomaria-yes",
+      "affectedContexts": [
+        {
+          "name": "aindanao-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Poxa que pena :(  Anotamos aqui que você não entendeu e vamos tentar melhorar isso para a próxima vez!\n\nQuer ajuda com mais alguma coisa?\n* Voltar ao inicio"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ainda não :(",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "38e1d061-6187-451a-8e5f-268513fdd4b3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "não tirou minha dúvida",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "267a41e2-af82-42b7-88ac-ce6483e4a963",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "não consegui",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "02ffbacf-69ea-409e-80af-e6282026ab24",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Não",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "d04ba9b6-38a8-43ef-b6a7-5f60d60c705b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ainda nao",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cc1b2d63-ddaf-4940-b513-c50610cef76a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ainda não",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7064809a-ff50-4984-9e7b-938c21a6e83c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ainda nao 😔",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "69575000-d3cb-4164-aaa2-7d2c97ec4989",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

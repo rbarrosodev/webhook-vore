@@ -1,0 +1,62 @@
+{
+  "id": "71dfb990-d350-4387-b2c9-4b4c3c786ab4",
+  "name": "pontodecalda2",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "receita_duvida-followup"
+  ],
+  "contexts": [
+    "receita_duvida-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "ed6b8c50-af82-49a3-9017-2a61dfa7325e",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "receita_duvida.receita_duvida-yes",
+      "affectedContexts": [
+        {
+          "name": "pontodecalda2-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "tdVideo:https://www.youtube.com/embed/xWDUm2-9ArI\n\n\nPerfeito, aqui vão alguns exemplos de tipos de pontos da calda de açúcar:\n\nFio Fino: É quando a calda atinge a temperatura de 101°C. Ao puxá-la com o garfo ou a colher, se forma um fiozinho que se desmancha facilmente num copo com água. O Fio Fino é usado para fazer marshmallows e xaropes.\n\nPérola: Esse ponto é muito usado para preparar quindins e compotas. Você pode identificá-lo mais ou menos depois de cinco minutos no fogo, ao puxar a colher e a calda cair num fio e depois em uma gotinha semelhante a uma pérola.\n\nFio Forte: Ao pingar um pouco da calda num copo com água fria, você vai ver que os desenhos formados por ela demoram a se desmanchar e o fio é mais grosso. Para atingir esse ponto, é preciso deixar a calda um pouco mais no fogo, a 103°C. É usado para geleias e recheios.\n\nTirei sua dúvida?\n\n* Sim \n* Ainda não 😔"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "ed6b8c50-af82-49a3-9017-2a61dfa7325e",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ponto de calda",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a6962402-de95-4383-9a0f-f4f85f20a9ff",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

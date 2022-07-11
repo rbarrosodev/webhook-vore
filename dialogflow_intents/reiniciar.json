@@ -1,0 +1,98 @@
+{
+  "id": "f8b2347a-419c-4a98-a9d4-6f9bd0acbd06",
+  "name": "reiniciar",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "afirma-followup"
+  ],
+  "contexts": [
+    "afirma-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "aedf62c2-62b0-4444-a789-561b3046682f",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-yes.DefaultWelcomeIntent-yes-yes.DefaultWelcomeIntent-yes-yes-yes.DefaultWelcomeIntent-yes-yes-yes-yes.1hora-yes.doce-yes.pular-yes.pular2-yes.ovosleiteeacar-yes.afirma-yes",
+      "affectedContexts": [
+        {
+          "name": "final_recomendacao-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Recomendando novamente..."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Recomeçar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "72ab5217-2c86-41bf-8250-9b88a33e3fba",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Reiniciar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7976241f-fa22-4bb7-9151-0bf84fa5a838",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Recomenda novamente",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "02b82a96-1713-426e-b264-36f92e898da1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Dúvida",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7e6c902b-9c5c-4807-8e5a-9cbdf3a0fe64",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": true,
+  "webhookUsed": true
+}

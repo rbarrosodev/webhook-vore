@@ -1,0 +1,81 @@
+{
+  "id": "20c422a9-1698-408d-90b2-0f4900e166cf",
+  "name": "nao_pontodecalda2",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "pontodecalda2-followup"
+  ],
+  "contexts": [
+    "pontodecalda2-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "71dfb990-d350-4387-b2c9-4b4c3c786ab4",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "receita_duvida.receita_duvida-yes.pontodecalda2-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Poxa que pena :(  Anotamos aqui que você não entendeu e vamos tentar melhorar isso para a próxima vez!\n\nQuer ajuda com mais alguma coisa?\n* Voltar ao início"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "ed6b8c50-af82-49a3-9017-2a61dfa7325e",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ainda não 😔",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "26acd860-0b79-445e-a621-5263e9af2716",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Não",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "391ab35d-50d4-4d3d-b96f-61c33c96e6e8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Infelizmente não",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "77fbeecb-4f5d-48c2-b612-e4a1c35e4f75",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

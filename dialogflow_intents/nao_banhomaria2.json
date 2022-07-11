@@ -1,0 +1,81 @@
+{
+  "id": "bb462076-477f-4006-98a8-3cc0965cd45f",
+  "name": "nao_banhomaria2",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "banhomaria2-followup"
+  ],
+  "contexts": [
+    "banhomaria2-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "b3b0c404-af72-4d46-9c46-e2e8b70319a5",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "receita_duvida.receita_duvida-yes-2.banhomaria2-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Poxa que pena :(  Anotamos aqui que você não entendeu e vamos tentar melhorar isso para a próxima vez!\n\nQuer ajuda com mais alguma coisa?\n* Voltar ao início"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "ed6b8c50-af82-49a3-9017-2a61dfa7325e",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Infelizmente não",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "06495102-a8ce-4c9b-b878-21514bd79d85",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Não",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "07a506d1-8769-492b-8df9-f17e66803ee4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Ainda não 😔",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9aed55c0-0dd3-480b-bcbf-5854dc2a1d0d",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

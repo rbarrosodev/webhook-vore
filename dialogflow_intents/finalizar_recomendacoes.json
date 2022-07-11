@@ -1,0 +1,186 @@
+{
+  "id": "aedf62c2-62b0-4444-a789-561b3046682f",
+  "name": "finalizar_recomendacoes",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "ovosleiteeacar-followup"
+  ],
+  "contexts": [
+    "ovosleiteeacar-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "d643ca7e-2b60-4aad-a007-01a794d4cfdf",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-yes.DefaultWelcomeIntent-yes-yes.DefaultWelcomeIntent-yes-yes-yes.DefaultWelcomeIntent-yes-yes-yes-yes.1hora-yes.doce-yes.pular-yes.pular2-yes.ovosleiteeacar-yes",
+      "affectedContexts": [
+        {
+          "name": "afirma-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "geo-city",
+          "dataType": "@sys.geo-city",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$geo-city",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Que bom que você gostou !! Quer mais recomendações do tipo? Ou, se precisar de mim para outra coisa, estou aqui!\n\nEi! Uma dica de vó importante! Vi que você não está logado! Entre com sua conta Globo para receber recomendações mais rapidamente com suas preferências já salvas\n\n* Login\n* Recomeçar"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "296d2242-907f-4704-89d4-75588124c1db",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Sim",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e829ba10-faa5-4aae-8e7c-d62447d479a2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Não gostei",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d38458f4-2687-43a1-bad1-f1d29b557e3e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Obrigado!!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "229c5350-fae2-43e5-8646-04f5efbaf3a5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Obrigado",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cc7efc72-9eb3-46e2-ab2b-d2fd9df71c11",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Obrigado!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9f8133a4-f035-4549-9ded-68e190c5ce52",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Estou satisfeito",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "edefd4cb-2293-4f90-8fc8-f10d29a7f856",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Perfeito",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ee9625f3-ad8f-4453-b0ac-45392536c655",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Gostei bastante",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f8508320-8ff0-4533-be36-1b8e88718e94",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Gostei muito",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "eceba6a4-ccb3-4c86-9867-b7535a831708",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Gostei",
+          "userDefined": false,
+          "alias": "geo-city",
+          "meta": "@sys.geo-city"
+        }
+      ],
+      "count": 0,
+      "id": "5579b216-5f08-4f22-b3aa-997454332b91",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
